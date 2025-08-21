@@ -3,32 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruby Faughlin's Teaching Portfolio - HOME</title>
+    <title>Ruby Faughlin's Teaching Portfolio - Home</title>
+    <link rel="stylesheet" href="starter.css">
 </head>
 <body>
     <!-- This is the header section for my page, in line with Semantic HTML ->
     <!- This is the main heading page --> 
     <header> 
-        <H1 style="color:#30759D">Ruby Faughlin's Teaching Portfolio</H1>  
-    <header>
+        <H1>Ruby Faughlin's Teaching Portfolio</H1>
+    </header>
     <!-- Navigation Menu Section -->
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></Li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="teaching.html">Teaching Practice</a>
-            <li><a href="projects.html">Project Showcase</a></li> 
-            <li><a href="worksamples.html">Samples of Work</a></li> 
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
+        <div class="container"> 
+            <ul>
+                <li><a class="active" href="index.html">Home</a></Li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="teaching.html">Teaching Practice</a>
+                <li><a href="projects.html">Project Showcase</a></li> 
+                <li><a href="worksamples.html">Samples of Work</a></li> 
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
     </nav>
     <!-- This is the main content area for my page, in line with Semantic HTML -->
     <main>
         <!-- This is the section for my Profile Photo -->
         <section>
-            <div class="profile-photo">
-                <img src="IMAGES/IMG_IMAGE_OF_PERSON_PFP.jpg" alt="circle-shaped portrait of an anonymous person, Ruby does not have a profile picture yet" width="400" height="250" align="left" >
-            </div>
+                <img src="IMAGES/IMG_IMAGE_OF_PERSON_PFP.jpg" alt="portrait of an anonymous person, Ruby does not have a profile picture yet" width="400" height="250" align="left" >
         </section>
 <!-- This is a section with an unordered list of attributes I am known for as a teacher -->
             <h2>Professional Summary</h2>
@@ -42,14 +43,20 @@
         </section>
         <!-- This is a section with an ordered list that represents key milestones in my professional experience as a teacher-->
         <section>
-            <h3><em>Professional Journey</em></h3>
+            <h2><em>Professional Journey</em></h2>
             <ol>
                 <li>Graduated from Dapto High School in 2022</li>
-                <li>Began studying a Bachelor of Education (Secondary) / Bachelor of Arts (Design Innovation and Technologies)</li>
-                <li>Completed my first and second placement at Albion Park High School</li>
-                <li>Completed my third placement at St Joseph's Catholic High School</li>
+                <li>Began studying a Bachelor of Education (Secondary) / Bachelor of Arts (Design Innovation and Technologies) in 2023</li>
+                <li>Completed my first and second placement at Albion Park High School in 2024</li>
+                <li>Completed my third placement at St Joseph's Catholic High School in 2025</li>
             </ol>
         </section>
     </main>    
+<!-- This is the footer section for my page, in line with Semantic HTML -->
+    <footer>
+        <div class="container">
+            <p> &copy; 2025 Ruby Faughlin. All rights reserved.</p>
+        </div>
+    </footer> 
 </body>
 </html>

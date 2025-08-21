@@ -3,53 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruby Faughlin's Teaching Portfolio - HOME</title>
-    <title> style="color:#30759D"</title>
+    <title>Ruby Faughlin's Teaching Portfolio - About</title>
+    <link rel="stylesheet" href="starter.css">
 </head>
+<style> 
+    body {
+        background-color: white;
+    }
+    h1 {
+        color:#000000
+    }
+    h2 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.4rem;
+        margin-bottom: 8xp;
+        color: #30759D 
+    }
+    table {
+        width:100%;
+        border-collapse: collapse;
+        margin-top: 10xp;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    th,
+    td {
+        border: 1px solid #191919;
+        padding: 10px 12px; 
+        text-align: left;
+    }
+    thead {
+        background-color:color #151515; 
+
+    }
+th {
+    color:#30759D;
+    font-weight: bold;
+}
+</style>
 <body>
 <!-- This is the main heading page-->
  <header>
- <H1 style="color:#30759D">Ruby Faughlin's Teaching Portfolio</H1>  
+    <H1>Ruby Faughlin's Teaching Portfolio</H1>  
  </header>
  <!-- Navigation Menu Section -->
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></Li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="teaching.html">Teaching Practice</a> 
-            <li><a href="projects.html">Project Showcase</a></li> 
-            <li><a href="worksamples.html">Samples of Work</a></li> 
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
+        <div class="container"> 
+            <ul>
+                <li><a class="active" href="index.html">Home</a></Li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="teaching.html">Teaching Practice</a>
+                <li><a href="projects.html">Project Showcase</a></li> 
+                <li><a href="worksamples.html">Samples of Work</a></li> 
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- This is the main content area for my page, in line with Semantic HTML --> 
- <!-- This is the subheading-->
-<H2 style="color:#0F0F5D">About Me</H2>
  <!-- This is the main content area for my page -->
     <main>
+        <!-- This is the title page for the "about me" section, in line with Semantic HTML --> 
+ <img src="IMAGES/ABOUT-ME.png" alt="Infographic showing my name (Miss Faughlin) and images of things that I do (travel, play rugby league, run, etc.)  ." width="1500" height="250">
+<section> 
+    <!-- This is the main content area for my page, in line with Semantic HTML --> 
+ <!-- This is the subheading-->
+<H2> About Me</H2>
+</section>
         <!-- This section is focused on my personal and professional background -->
         <!-- This is a series of paragraphs for my page -->
         <section>
  <p>Hi, my name is <strong>Ruby Faughlin</strong>,
         </section>
- <p>I am a <i>third-year</i> student teacher currently studying a Bachelor of 
-    Education (Secondary) / Bachelor of Arts (Design Innovation and 
-    Technologies) at Australian Catholic University. 
-<p>My teaching philosophy is grounded in <i>inclusive, creative, and hands-on</i> learning, where students 
-    are encouraged to take ownership of their learning through meaningful, 
-    real-world experiences. </p>
-</p> Outside the classroom, I’m a passionate traveller. 
-    I also love sports and play rugby league, which fuels my belief in 
-    teamwork and resilience both on and off the field. At home, I share life with 
-    my cheeky Labrador puppy, <i>Ryobi</i>, who keeps me on my toes and reminds me to 
-    enjoy the little things.</a></p>
+            <article class="profile"> 
+                <div class="profile-text">
+                    <p>I am a <i>third-year</i> student teacher currently studying a Bachelor of 
+                        Education (Secondary) / Bachelor of Arts (Design Innovation and 
+                        Technologies) at Australian Catholic University. 
+                    <p>My teaching philosophy is grounded in <i>inclusive, creative, and hands-on</i> learning, where students 
+                        are encouraged to take ownership of their learning through meaningful, 
+                        real-world experiences. </p>
+                    </p> Outside the classroom, I’m a passionate traveller. 
+                        I also love sports and play rugby league, which fuels my belief in 
+                        teamwork and resilience both on and off the field. At home, I share life with 
+                        my cheeky Labrador puppy, <i>Ryobi</i>, who keeps me on my toes and reminds me to 
+                        enjoy the little things.</a></p>
+                </div>
+                <div class="profile-photo"> 
+                    <img src="IMAGES/RYOBI IMAGE.png" alt="Image of my dog, Ryobi who is a Chocolate Labrador">
+                </div>
+        </article>
         </section>
-<!--Image of Ryobi-->
-<img src="IMAGES/RYOBI IMAGE.png" alt="Image of my dog, Ryobi who is a Chocolate Labrador"width="250" height="250" align="right">
+
 <!--This section looks at my current experience at university and my teaching experience-->
 </section>
     <h2>My Teaching Experience</h2>
+    <p>I have taught many technology and design-focused subjects in high schools. These are my main teaching areas: </p>
+    <img src="images/Technology-Teaching-Areas-Graphic.png" alt="Infographic showing main teaching areas: Digital technologies, Food Technology, Design & Technology, Industrial Technology, Textiles and Electro-Mechanical Technology." width="700px" height="250">
+    <link rel="style.css" href="style.css"> 
 <p>I’ve successfully completed three teaching practicums—two in public schools and one in a Catholic school. 
 <p>Each placement has helped shape my understanding of how different learning environments operate and reaffirmed the importance of adaptability, relationship-building, and reflective practice in the classroom. </p>
 </p>These experiences have also deepened my confidence in lesson planning, classroom management, and differentiation to meet a diverse range of student needs.</p>
@@ -57,13 +106,7 @@
 <p> I’m majoring in <strong>Food Technology</strong>, an area I’m truly passionate about. I love learning and teaching about food, nutrition, and sustainability, and exploring how food connects to culture, health, and innovation. 
 </p> Some of my most recent work includes developing a raspberry and beetroot protein bar designed to support active lifestyles, and creating a gourmet sausage range that celebrates the unique flavours of native Indigenous ingredients, including crocodile and kangaroo. Projects like these reflect my commitment to using food education as a tool to spark curiosity, respect for culture, and critical thinking in students.</p>
 
- <!-- This is a link-->
- <p><strong>Here is a link to some of my work:</strong>  
-<a>https://docs.google.com/document/d/17NBHd8SDwH_y-v3SZH8aZHwQugg8fXX5T-fEWCQRmcA/edit?usp=sharing></a>
-<section>
-<!--Image of Protein Bar-->
-<img src="IMAGES/PB POSTER.png" width="250" height="250" align="left">
-</section> 
+
 
 <!--This section is focused on providing a practicum placement overview in table format-->
         <section>
@@ -78,6 +121,7 @@
                         <th>Subjects Taught</th>
                         <th>Year Level</th>
                         <th>Term</th>
+                        
                     </tr>
                 </thead>
                 <tbody>
@@ -103,43 +147,13 @@
                 </tbody>
             </table>
         </section>
-
-
-<!-- This section is focused on providing a practicum placement overview in table format --> 
-    <section>
-        <style>
-            table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top:10 px;
-            font-family: Arial, sans-serif;
-            }
-
-            th, td {
-            border: 1px solid;
-            padding: 10px 12px;
-            text-align: left;
-            }
-
-            thead {
-            background-color: color#0000ff;
-            }
-
-            th{
-            color: color#0000ff;
-            font-weight: bold;
-            }
-
-            tr:nth-child(even) {
-            background-color: color#0000ff;
-            }
-
-            h2 {
-            font-family: 'Segoe UI', sans-serif;
-            font-size: 1.4rem;
-            margin-bottom: 8px;
-            color: color#0000ff;
-            }
-            
+    </body>
+    <!-- This is the footer section for my page, in line with Semantic HTML -->
+       </main>
+    <footer>
+        <div class="container">
+            <p> &copy; 2025 Ruby Faughlin. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
