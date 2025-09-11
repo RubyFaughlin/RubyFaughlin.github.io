@@ -201,7 +201,7 @@ th {
   color:#1B365C;                             /* Blue header text */
   font-weight: bold;                           /* Bold font */
 }
-.fex-container {
+.flex-container {
    display: flex; 
    flex-wrap: wrap;
    gap: 20px;
@@ -209,7 +209,7 @@ th {
    margin-top: 20px;
 }
 .project-card {
-    flex:1 1 50px; 
+    flex:1 1 350px; 
     background-color: rgb (207, 208, 208);
     border: 3px solid rgb (113, 115, 248);
     padding: 15px;
@@ -226,6 +226,7 @@ th {
       font-size: 1.1rem; 
       color: rgb (63, 27, 244)
 }
+
 
 /* ---------- 8) Cards / Gallery ------------- */
 .card-grid {
