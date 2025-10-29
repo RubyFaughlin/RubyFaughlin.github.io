@@ -1,69 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruby Faughlin's Teaching Portfolio - Contact Me</title>
-    <link rel="stylesheet" href="starter.css">
-</head>
-<body>
-    <!-- This is the header section for my page, in line with Semantic HTML-->
-     <header>
-        <h1>Contact Me</h1>
-     </header>
-     <!-- Navigation menu section-->
-    <nav>
-        <div class="container"> 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="teaching.html">Teaching Practice</a></li>
-                <li><a href="projects.html">Project Showcase</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a class="active" href="contact.html">Contact Me</a></li>
-            </ul>
+<!DOCTYPE HTML>
+<!--
+Template: [Template Name] by HTML5 UP
+Author: AJ / @n33co
+Source: https://html5up.net
+License: Creative Commons Attribution 3.0 (https://html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic Page - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Teaching Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							              <li><a href="index.html">Home</a></li>
+                            <li><a href="teaching-practice.html">Teaching Practice</a></li>
+                            <li><a href="project-showcase.html">Project Showcase</a></li>
+                            <li><a href="resources.html">Resources</a></li>
+                            <li><a href="resume.html">Resume</a></li>
+                            <li class="active" ><a href="contact.html">Contact Me</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/ruby.faughlin/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/ruby.faughlin/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/RubyFaughlin/COMP208_AT3_Faughlin_Ruby" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+          
+                    				<!-- Footer -->
+
+			    <footer id="footer">
+<!-- This is the section for the Contact Form  -->
+<section class="contact">
+  <div class="inner">
+
+    <section class="split">
+
+      <!-- Left side of contact form -->
+      <section>
+        <h2>Get in touch</h2>
+        <form id="contact-form" action="https://formsubmit.co/23871082b040240f65ba7cc142b3abe8" method="post" autocomplete="on">
+        <!-- Form text input for Full Name -->
+          <div class="fields">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" placeholder="Zach Bryan" required minlength="6" autocomplete="name">
+            </div>
+        <!-- Form text input for Email address -->
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="name@example.com" required autocomplete="email">
+            </div>
+        <!-- Form text input for Message -->
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="How can I help?" required minlength="8"></textarea>
+            </div>
+          </div>
+        <!-- Honeypot anti-spam -->
+          <input type="text" name="honey" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;">
+        <!-- button tag used for input, in line with Semantic HTML-->
+          <ul class="actions">
+            <li><input type="submit" value="Send Message" class="button primary" /></li>
+          </ul>
+
+        </form>
+      </section>
+
+      <!-- Right side of contact form -->
+      <section>
+        <div class="alt">
+         
+      </section>
         </div>
-    </nav>
-     <!-- This is the main content area for my page, in line with Semantic HTML-->
-      <main>
-            <!-- This is the section for the Contact Form  -->
-        <section class="section">
-                <h2>Get in touch</h2>
-                <form id="contact-form" action="https://formsubmit.co/23871082b040240f65ba7cc142b3abe8" method="post" autocomplete="on">
-                    <fieldset>
-                        <legend>Your details</legend>
-                        <!-- Form text input for Full Name -->
-                        <label for="name">Full name</label>
-                        <input id="name" name="name" type="text" placeholder="Marshall Mathers" required minlength="6"             autocomplete="name">
-                        <!-- Form text input for Email address -->
-                        <label for="email">Email</label>
-                        <input id="email" name="email" type="email" placeholder="name@example.com" required autocomplete="email">
-                        <!-- Form text input for Message -->
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="How can I help?" required minlength="8"></textarea>
-                        <!-- honeypot anti-spam field -->
-                        <input type="text" name="honey" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;"> 
-                        <!-- button tag used for input, in line with Semantic HTML-->
-                        <button type="submit">Send</button>
-                    </fieldset>
-                </form>
-                        </section>
-        <!-- This is the section for links to socials  -->
-        <section class="section" aria-labelledby="socials">
-            <h2 id="socials">Add me on Socials</h2>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/ruby-faughlin-972813320/?originalSubdomain=au" rel="noopener">LinkedIn</a></li>
-                <li><a href= https://www.instagram.com/ruby.faughlin/ rel="noopener">Instagram</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <p> &copy; 2025 Ruby Faughlin. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
+   
+</section>
+
+
+                    <section>
+                        <div class="alt">
+                            <h3>Address</h3>
+                            <p>25A Barker Rd,<br>Strathfield, NSW 2135</p>
+                        </div>
+
+                        <div>
+                            <h3>Phone</h3>
+                            <p><a href="#">1300 275 228</a></p>
+                        </div>
+
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="#">Ruby.faughlin@gmail.com</a></p>
+                        </div>
+      
+						<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.facebook.com/ruby.faughlin/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/ruby.faughlin/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/RubyFaughlin/COMP208_AT3_Faughlin_Ruby" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Ruby Faughlin </li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
-
-
-            

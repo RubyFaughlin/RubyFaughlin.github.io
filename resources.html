@@ -1,86 +1,288 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruby Faughlin's Teaching Portfolio - Resources</title>
-    <link rel="stylesheet" href="starter.css">
-</head>
-<body>
-       <!-- This is the header section for my page, in line with Semantic HTML -->
-    <header>
-        <h1>Resources</h1>
-    </header>
-    <!-- Navigation menu section -->
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="teaching.html">Teaching Practice</a></li>
-                <li><a href="projects.html">Project Showcase</a></li>
-                <li><a class="active" href="resources.html">Resources</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </div>
-    </nav>
-        <!-- This is the main content area for my page, in line with Semantic HTML -->
-    <main>
-        <!-- This is the section providing links to teaching resources -->
-        <section class="section">
-            <h2>Downloadable Teaching Resources</h2>
-            <p>Overview for reference: a sample unit of work (NESA), a sample scope and sequence (NESA), an original slide deck and lesson handout.</p>
-            <p>The following resources are provided so that you can download and adapt for your own work.</p>         
-            <!-- This division provides the structure for a grid of cards with thumbnails and download links -->
-            <div class="card-grid">
-                <!-- Unit of Work -->
-                <article class="card">
-                    <a href="docs/D-AND-T-7-10-2019-sample-unit 2.pdf" target="_blank" rel="noopener">
-                        <img src="IMAGES/Sample-Unit–Design-and-Technology-THUMB.png" alt="Thumbnail for Unit of Work PDF">
-                    </a>
-                    <div class="content">
-                        <h3>Stage 4 Design and Technology - Sample Unit of Work from NESA</h3>
-                        <p>Scope & sequence, outcomes, resources, and assessment overview.</p>
-                    </div>
-                </article>
-                <!-- Lesson Plan -->
-                <article class="card">
-                    <a href="docs/STAGE4-SAMPLE-SCOPE.SEQUENCE 2.pdf" target="_blank" rel="noopener">
-                        <img src="IMAGES/SCOPE-SEQUENCE-THUMB.png" alt="Thumbnail for Sample Scope & Sequence PDF">
-                    </a>
-                    <div class="content">
-                        <h3>Stage 4 Technology - Sample Unit Scope and Sequence from NESA</h3>
-                        <p>Organised by term, linked to Topics and Outcomes</p>
-                    </div>
-                </article>
-                <!-- Slides -->
-                <article class="card">
-                    <a href="docs/DESIGN-THINKING-SLIDE-DECK.pdf">
-                        <img src="IMAGES/SLIDE-DECK-THUMB.png" alt="Thumbnail for Slide Deck">
-                    </a>
-                    <div class="content">
-                        <h3>Stage 4 Materials and Production Processes</h3>
-                        <p>Slides: Introduction to 2025 Course Topic "Creative and Design Thinking."</p>
-                </div>
-                </article>
-                <!-- Handout -->
-                <article class="card">
-                    <a href="docs/Design-Thinkin-Challenge.pdf">
-                        <img src="IMAGES/CHALLENGE.png" alt="Thumbnail for Slide Deck">
-                    </a>
-                    <div class="content">
-                        <h3>Stage 4 Materials and Production Processes - UX and UI Design for Web Apps Handout </h3>
-                        <p>Handout: Design Thinking Challenge "Helping Teens Tackle Clutter"</p>
-                    </div>
-                </article>
+<!DOCTYPE HTML>
+<!--
+Template: [Template Name] by HTML5 UP
+Author: AJ / @n33co
+Source: https://html5up.net
+License: Creative Commons Attribution 3.0 (https://html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic Page - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload light-mode">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Teaching Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+                            <li><a href="teaching-practice.html">Teaching Practice</a></li>
+                            <li><a href="project-showcase.html">Project Showcase</a></li>
+                            <li class="active"><a href="resources.html">Resources</a></li>
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="contact.html">Contact Me</a></li>
+
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/ruby.faughlin/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/ruby.faughlin/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/RubyFaughlin/COMP208_AT3_Faughlin_Ruby" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post 1 (About Me) -->
+							<article class="post featured">
+								<header class="major">
+
+									<!-- Dark/Light Mode Toggle Button -->
+    <ul class="actions special">
+      <li>
+        <button id="theme-toggle" class="button large">Switch to Dark Mode</button>
+      </li>
+    </ul>
+
+  </header>
+</article>
+
+<!-- Dark/Light Mode code -->
+<script>
+  const btn = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  btn.addEventListener('click', () => {
+    body.classList.toggle('dark-mode'); /* switch dark mode on/off */
+
+    const textElements = document.querySelectorAll(
+      '#main h1, #main h2, #main h3, #main h4, #main h5, #main h6, #main p, #main a, #main strong, #main .button.large, theme-toggle'
+    );
+
+    if (body.classList.contains('dark-mode')) {
+      btn.textContent = "Switch to Light Mode";
+      textElements.forEach(el => el.style.color = '#fff'); /* white text */
+	  
+    } else {
+      btn.textContent = "Switch to Dark Mode";
+      textElements.forEach(el => el.style.color = ''); /* reset to default (white mode) */
+	  
+    }
+  });
+</script>
+
+<style>
+  
+  body.is-preload #main {			/* Light mode (default) */
+    background-color: white; /* or use _palette(bg) if using Sass variables */
+    color: black;            /* text colour for readability */
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  body.dark-mode #main {					  /* Dark mode (content column only) */
+    background-color: #222; /* dark content block */
+    color: #fff;            /* text colour */
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+button, .button, input[type=submit], input[type=reset], input[type=button] {		  /* Colour of ALL buttons */
+    background-color: #7D7D7D !important;			  /* Grey button colour */
+    color: #fff !important;							  /* Light blue border colour */
+    border: 1px solid #97DBFF !important;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover, .button:hover, input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover { /* Hover effect */
+    background-color: #7D7D7D !important;		/* Grey button colour */
+    color: #fff !important;			/* White text */
+}
+
+</style>
+
+				
+					<!-- Featured Post 1 (About Me) -->
+									<span class="date">October 23, 2025</span>
+									<h2><a href="#">Valuable Resources</a> </h2> 
+										 <h3>Overview for reference: a sample unit of work (NESA), a sample scope and sequence (NESA), an original slide deck and lesson handout. </h3>
+                                         <h4>The following resources are provided so that you can download and adapt for your own work. </h4>
+								</header>
+								<a href="#" class="image main"><img src="images/resources-page.png" alt="ACU Logo Image"/></a>
+								<ul class="actions special">
+									<li><a href="https://education.nsw.gov.au/teach-nsw/beginning-teacher-information-hub/teacher-resources" class="button large">Click Here to See Beginning Teacher Information Hub/Resources</a></li>
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+                                        <!-- This division provides the structure for a grid of cards with thumbnails and download links -->
+										<span class="date">March 21, 2025</span>
+										<h2><a href="#">Stage 4 Design and Technology<br />
+										Sample Unit of Work from NESA</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/d&t-sample-unit.png" alt="This is an thumbnail image of a Design and Technology Sample Unit of Work." /></a>
+									<p>Scope & sequence, outcomes, resources, and assessment overview of Sample Unit, Design and Technology - Life Skills.</p>
+									<ul class="actions special">
+										<li><a href="docs/sample-unit.pdf" class="button">See Resource</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">June 1, 2025</span>
+										<h2><a href="#">Stage 4 Technology <br />
+										Sample Unit Scope and Sequence from NESA</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/scope-sequence.png" alt="This is an thumbnail image of a Years 7 and 8 Technology Scope and Sequence." /></a>
+									<p>Organised by term, linked to Topics and Outcomes. Relevant to Technology Years 7 and 8.</p>
+									<ul class="actions special">
+										<li><a href="docs/scope-sequence-resource.pdf" class="button">See Resource</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">May 29, 2025</span>
+										<h2><a href="#">Stage 4 Materials and Production Processes</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/thinking-about-thinking.png" alt="This is an thumbnail image of a slide deck that I made on the topic Creative and Design Thinking." /></a>
+									<p>This is a teaching resouce that I developed during my placement at St Joseph's Catholic High School. <br> 
+                                        Slides: Introduction to 2025 Course Topic "Creative and Design Thinking.".</p>
+									<ul class="actions special">
+										<li><a href="docs/slide-deck.pdf" class="button">See Resource</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">March 31, 2025</span> 
+                                        <h2><a href="#">Stage 4 Materials and Production Processes - UX and UI Design for Web Apps Handout </a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/student-work.png" alt="This is an thumbnail image of a student's work. The task was a Design Thinking Challenge where they had to Help Teens Tackle Clutter." /></a>
+									<p> This is a teaching resouce that I developed during my placement at St Joseph's Catholic High School. <br> 
+                                        Handout: Design Thinking Challenge "Helping Teens Tackle Clutter" </p>
+									<ul class="actions special">
+										<li><a href="docs/thinking-challenge-resource.pdf" class="button">See Resource</a></li>
+									</ul>
+								</article>
+							</section>
+
+						<!-- Footer -->
+							<footer>
+								<!-- This is a navigation menu in the footer-->
+								<div class="pagination">
+									<!--<a href="#" class="previous">Prev</a>-->
+									<a href="http://127.0.0.1:5500/index.html" class="page active">1</a>
+									<a href="http://127.0.0.1:5500/teaching-practice.html" class="page">2</a>
+									<a href="http://127.0.0.1:5500/project-showcase.html" class="page">3</a>
+									<a href="http://127.0.0.1:5500/resources.html" class="page">5</a>
+									<a href="http://127.0.0.1:5500/resume.html" class="page">6</a>
+									<a href="http://127.0.0.1:5500/contact.html" class="page">7</a>
+									<a href="#" class="next">Next</a>
+								</div>
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+<!-- This is the section for the Contact Form  -->
+<section class="contact">
+  <div class="inner">
+
+    <section class="split">
+
+      <!-- Left side of contact form -->
+      <section>
+        <h2>Get in touch</h2>
+        <form id="contact-form" action="https://formsubmit.co/23871082b040240f65ba7cc142b3abe8" method="post" autocomplete="on">
+        <!-- Form text input for Full Name -->
+          <div class="fields">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" placeholder="Zach Bryan" required minlength="6" autocomplete="name">
             </div>
-        </section>
-    </main>
-    <!-- This is the footer section for my page, in line with Semantic HTML -->
-    <footer>
-        <div class="container">
-            <p> &copy; 2025 Ruby Faughlin. All rights reserved.</p>
+        <!-- Form text input for Email address -->
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="name@example.com" required autocomplete="email">
+            </div>
+        <!-- Form text input for Message -->
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="How can I help?" required minlength="8"></textarea>
+            </div>
+          </div>
+        <!-- Honeypot anti-spam -->
+          <input type="text" name="honey" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;">
+        <!-- button tag used for input, in line with Semantic HTML-->
+          <ul class="actions">
+            <li><input type="submit" value="Send Message" class="button primary" /></li>
+          </ul>
+
+        </form>
+      </section>
+
+      <!-- Right side of contact form -->
+      <section>
+        <div class="alt">
+         
+      </section>
         </div>
-    </footer>    
-</body>
+   
+</section>
+
+
+                    <section>
+                        <div class="alt">
+                            <h3>Address</h3>
+                            <p>25A Barker Rd,<br>Strathfield, NSW 2135</p>
+                        </div>
+
+                        <div>
+                            <h3>Phone</h3>
+                            <p><a href="#">1300 275 228</a></p>
+                        </div>
+
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="#">Ruby.faughlin@gmail.com</a></p>
+                        </div>
+      
+						<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.facebook.com/ruby.faughlin/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/ruby.faughlin/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/RubyFaughlin/COMP208_AT3_Faughlin_Ruby" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Ruby Faughlin </li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>

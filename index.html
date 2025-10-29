@@ -1,190 +1,360 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruby Faughlin's Teaching Portfolio</title>
-    <link rel="stylesheet" href="starter.css">
-</head>
-<style> 
-    body {
-        background-color: white;
-    }
-    h1 {
-        color:#000000
-    }
-    h2 {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 1.4rem;
-        margin-bottom: 8xp;
-        color: #30759D 
-    }
-    table {
-        width:100%;
-        border-collapse: collapse;
-        margin-top: 10xp;
-        font-family:Arial, Helvetica, sans-serif;
-    }
-    th,
-    td {
-        border: 1px solid #191919;
-        padding: 10px 12px; 
-        text-align: left;
-    }
-    thead {
-        background-color:color #151515; 
+<!DOCTYPE HTML>
+<!--
+Template: [Template Name] by HTML5 UP
+Author: AJ / @n33co
+Source: https://html5up.net
+License: Creative Commons Attribution 3.0 (https://html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+	</body>
 
-    }
-th {
-    color:#30759D;
-    font-weight: bold;
-}
-</style>
-<body>
-<!-- This is the main heading page-->
- <header>
-    <H1>Ruby Faughlin's Teaching Portfolio</H1>  
- </header>
- <!-- Navigation Menu Section -->
-    <nav>
-        <div class="container"> 
-            <ul>
-                <li><a class="active"href="index.html">Home</a></li>
-                <li><a href="teaching.html">Teaching Practice</a></li>
-                <li><a href="projects.html">Project Showcase</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </div>
-    </nav>
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+				<div class="bg"></div>
 
- <!-- This is the main content area for my page -->
-    <main>
-        <!-- This is the title page for the "about me" section - it is also a video, in line with Semantic HTML --> 
-    <div class="embed-video"> 
-        <p><a href="MEDIA/INTRO.VID.mp4" target="_blank"><img src="IMAGES/ABOUT.ME.IMAGE.png" alt="Infographic showing my name (Miss Faughlin) and images of things that I do (travel, play rugby league, run, etc.)  ." width="1500" height="250"></a></p>
-    </div>
- <section> 
-    <!-- This is the main content area for my page, in line with Semantic HTML --> 
- <!-- This is the subheading-->
-<H2> About Me</H2>
-</section>
-        <!-- This section is focused on my personal and professional background -->
-        <!-- This is a series of paragraphs for my page -->
-        <section>
- <p>Hi, my name is <strong>Ruby Faughlin</strong>,
-        </section>
-            <article class="profile"> 
-                <div class="profile-text">
-                    <p>I am a <i>third-year</i> student teacher currently studying a Bachelor of 
-                        Education (Secondary) / Bachelor of Arts (Design Innovation and 
-                        Technologies) at Australian Catholic University. 
-                    <p>My teaching philosophy is grounded in <i>inclusive, creative, and hands-on</i> learning, where students 
-                        are encouraged to take ownership of their learning through meaningful, 
-                        real-world experiences. </p>
-                    </p> Outside the classroom, I’m a passionate traveller. 
-                        I also love sports and play rugby league, which fuels my belief in 
-                        teamwork and resilience both on and off the field. At home, I share life with 
-                        my cheeky Labrador puppy, <i>Ryobi</i>, who keeps me on my toes and reminds me to 
-                        enjoy the little things.</a></p>
-                </div>
-                <div class="profile-photo"> 
-                    <img src="IMAGES/RYOBI IMAGE.png" alt="Image of my dog, Ryobi who is a Chocolate Labrador">
-                </div>
-        </article>
-        </section>
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Ruby Faughlin<br />
+						Teaching Portfolio</h1>
+						<p> This is the professional portfolio of Ruby Faughlin, a pre-service educator dedicated to developing high-quality, student-centred learning experiences.
+							"Not just who I am, but who I am becoming."</p>
 
-<!--This section looks at my current experience at university and my teaching experience-->
-</section>
-    <h2>My Teaching Experience</h2>
-    <p>I have taught many technology and design-focused subjects in high schools. These are my main teaching areas: </p>
-    <img src="IMAGES/mysubjects.png" alt="Infographic showing main teaching areas: Digital technologies, Food Technology, Design & Technology, Industrial Technology, Textiles and Electro-Mechanical Technology." width="700px" height="250">
-    <link rel="style.css" href="style.css"> 
-<p>I’ve successfully completed three teaching practicums—two in public schools and one in a Catholic school. 
-<p>Each placement has helped shape my understanding of how different learning environments operate and reaffirmed the importance of adaptability, relationship-building, and reflective practice in the classroom. </p>
-</p>These experiences have also deepened my confidence in lesson planning, classroom management, and differentiation to meet a diverse range of student needs.</p>
-
-<p> I’m majoring in <strong>Food Technology</strong>, an area I’m truly passionate about. I love learning and teaching about food, nutrition, and sustainability, and exploring how food connects to culture, health, and innovation. 
-</p> Some of my most recent work includes developing a raspberry and beetroot protein bar designed to support active lifestyles, and creating a gourmet sausage range that celebrates the unique flavours of native Indigenous ingredients, including crocodile and kangaroo. Projects like these reflect my commitment to using food education as a tool to spark curiosity, respect for culture, and critical thinking in students.</p>
+						<!-- JavaScript string interpolation with personalised message -->
+						 <section class="section">
+							
+							<p id="greeting" style="max-width: 500px; margin: 0 auto; text-align: center;" >To find out more about this portfolio, please enter your name!</p>
+							<input id="usernameInput" class="input-spaced" type="text" placeholder="Enter your name">
+							<button id="setGreetingBtn" type="button" style="padding: 0.5rem 2rem 3rem 2rem; margin-top: 20px; margin-bottom: 20px;" >Set Greeting</button>
+							<!-- Clear Button -->
+							<button id="clearGreetingBtn" type="button" style="padding: 0.5rem 2rem 3rem 2rem; margin-top: 0; margin-bottom: 20px;">Clear</button>
 
 
+						<script>
+							function setGreeting() {
+							const input = document.getElementById('usernameInput');
+							const greeting = document.getElementById('greeting');
+							const name = (input?.value || '').trim();
+							greeting.textContent = name ? `Welcome to my portfolio, ${name}! Here you can explore my journey at University, discover my professional experiences and explore the projects I have been working on that showcase my creativity and growth.
+							Feel free to reach out through the ‘Contact Me’ page — I’d love to hear from you.`
 
-<!--This section is focused on providing a practicum placement overview in table format-->
-        <section>
-            <section>
-                </section>
-            <h2>Practicum Placement Overview</h2>
-            <section>
-            <table>
-                <thead>
-                    <tr>
-                        <th>School</th>
-                        <th>Subjects Taught</th>
-                        <th>Year Level</th>
-                        <th>Term</th>
-                        
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Albion Park High School</td>
-                        <td>Stage 4 Food Technology & Wood Work, Stage 5 Food Technology</td>
-                        <td>Year 7, 8 & 10</td>
-                        <td>Term 2, 2024</td>
-                    </tr>
-                    <tr>
-                        <td>Albion Park High School</td>
-                        <td>Stage 4 Food Technology & Wood Work, Stage 5 Food Technology</td>
-                        <td>Year 7, 8 & 10</td>
-                        <td>Term 4, 2024</td>
-                    </tr>
-                    <tr>
-                        <td>St Joseph's Catholic High School</td>
-                        <td>Stage 4 Food Technology & Wood Work, Stage 5 Design & Technology</td>
-                        </td>
-                        <td>Year 7,8,9 & 10</td>
-                        <td>Term 2, 2025</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <div class=".image-photo"> 
-             <img src="IMAGES/myschools.png" alt="Logos of the schools that I have taught at, inclduing Ablion Park High School and St Joseph's Catholic High School." width="700px" height="250">
-        </div>
+														: 'Welcome to my portfolio!';
+							}
+							document.getElementById('setGreetingBtn').addEventListener('click',
+							setGreeting);
+
+							document.getElementById('clearGreetingBtn').addEventListener('click', () => {
+							document.getElementById('usernameInput').value = ''; /* This clears the input */
+    						document.getElementById('greeting').textContent = 'To find out more about this portfolio, please enter your name!'; // resets greeting
     
-    <!-- This is the second main content area for my page, in line with Semantic HTML -->
-    <main>
-        <!-- This is the section for my Profile Photo -->
-        <section>
-                <img src="IMAGES/IMG_IMAGE_OF_PERSON_PFP.jpg" alt="portrait of an anonymous person, Ruby does not have a profile picture yet" width="400" height="250" align="left" >
-        </section>
-<!-- This is a section with an unordered list of attributes I am known for as a teacher -->
-            <h2>Professional Summary</h2>
-            <ul style="font-size: medium;">
-                <li>Pre-service teacher completing a Bachelor of Education, majoring in Food Technology</li>
-                <li>Completed three teaching placements: two at Albion Park High School (public) and one at St Joseph’s Catholic High School</li>
-                <li> Skilled in building positive relationships and fostering an inclusive classroom environment</li>
-                <li>Demonstrates strong classroom management and creative resource development skills</li>
-                <li>Passionate about promoting food, nutrition, and technology education through hands-on and theory-based learning</li>
-            </ul>
-        </section>
-        <!-- This is a section with an ordered list that represents key milestones in my professional experience as a teacher-->
-        <section>
-            <h2><em>Professional Journey</em></h2>
-            <ol>
-                <li>Graduated from Dapto High School in 2022</li>
-                <li>Began studying a Bachelor of Education (Secondary) / Bachelor of Arts (Design Innovation and Technologies) in 2023</li>
-                <li>Completed my first and second placement at Albion Park High School in 2024</li>
-                <li>Completed my third placement at St Joseph's Catholic High School in 2025</li>
-            </ol>
-        </section>
-    </main>    
-<!-- This is the footer section for my page, in line with Semantic HTML -->
-    <footer>
-        <div class="container">
-            <p> &copy; 2025 Ruby Faughlin. All rights reserved.</p>
+});
+
+							
+						</script>
+					</section>
+
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Teaching Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="teaching-practice.html">Teaching Practice</a></li>
+							<li><a href="project-showcase.html">Project Showcase</a></li>
+							<li><a href="resources.html">Resources</a></li>
+							<li><a href="resume.html">Resume</a></li>
+                            <li><a href="contact.html">Contact Me</a></li>
+
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/ruby.faughlin/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/ruby.faughlin/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/RubyFaughlin/COMP208_AT3_Faughlin_Ruby" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post 1 (About Me) -->
+<article class="post featured">
+  <header class="major">
+
+    <!-- Dark/Light Mode Toggle Button -->
+    <ul class="actions special">
+      <li>
+        <button id="theme-toggle" class="button large">Switch to Dark Mode</button>
+      </li>
+    </ul>
+
+  </header>
+</article>
+
+<!-- Dark/Light Mode code -->
+<script>
+  const btn = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  btn.addEventListener('click', () => {
+    body.classList.toggle('dark-mode'); /* switch dark mode on/off */
+
+    const textElements = document.querySelectorAll(
+      '#main h1, #main h2, #main h3, #main h4, #main h5, #main h6, #main p, #main a, #main strong, #main .button.large, theme-toggle'
+    );
+
+    if (body.classList.contains('dark-mode')) {
+      btn.textContent = "Switch to Light Mode";
+      textElements.forEach(el => el.style.color = '#fff'); /* white text */
+	  
+    } else {
+      btn.textContent = "Switch to Dark Mode";
+      textElements.forEach(el => el.style.color = ''); /* reset to default (white mode) */
+	  
+    }
+  });
+</script>
+
+<style>
+  
+  body.is-preload #main {			/* Light mode (default) */
+    background-color: white; /* or use _palette(bg) if using Sass variables */
+    color: black;            /* text colour for readability */
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  body.dark-mode #main {					  /* Dark mode (content column only) */
+    background-color: #222; /* dark content block */
+    color: #fff;            /* text colour */
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+button, .button, input[type=submit], input[type=reset], input[type=button] {		  /* Colour of ALL buttons */
+    background-color: #7D7D7D !important;			  /* Grey button colour */
+    color: #fff !important;							  /* Light blue border colour */
+    border: 1px solid #97DBFF !important;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover, .button:hover, input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover { /* Hover effect */
+    background-color: #7D7D7D !important;		/* Grey button colour */
+    color: #fff !important;			/* White text */
+}
+
+</style>
+
+
+									<span class="date">October 23, 2025</span>
+									<h2><a href="#">Who Am I?</a> </h2> 
+										 <h3>And Why Am I Becoming a Teacher?</h3>
+									<p>Hi, my name is <strong>Ruby Faughlin</strong><br />
+									I am a <emphasised>third-year</emphasised> pre-service educator studying a Bachelor of Education (Secondary) / Bachelor of Arts (Design Innovation and Technologies) at the Australian Catholic University.<br />
+									My teaching philosophy is grounded in inclusive, creative and hands-on learning, where students are encouraged to take ownership of their learning through meaningful, real-world connections and experiences.<br />
+									Outside of the classroom, I am a passionate traveller. I also love sports and play rugby league which fuels my belief in teamwork and resilience, both on and of the field. At home, I share life with my cheeky Labrador puppy, Ryobi, who keeps me on my toes and reminds me to enjoy the little things.</p>
+
+								</header>
+					
+
+		<!-- JavaScript to Show/Hide (Toggle) Image -->
+    		<section class="section">
+				<button onclick="toggle()">Hide/Show Image</button>
+
+		<!-- Resume image to show/hide -->
+		<div class="image main">
+			<img id="homeImage" src="images/background-photo.png" alt="This is a thumb nail of my home page.">
+		</div>
+
+
+				<script> 
+					function toggle () {
+					let para = document.getElementById("homeImage");
+					if (para.style.display === "none") {
+						para.style.display = "block";
+					} else {
+						para.style.display = "none";
+					}
+					console.log("Now display is:", para.style.display);
+					}
+        		</script>
+    		</section>
+
+
+								<ul class="actions special">
+									<li><a href="docs/why-i-teach.pdf" class="button large">Click Here to see "Why I Teach"</a></li>
+								</ul>
+							</article>
+
+							<!-- Featured Post 2 (My Teaching Expereince) -->
+							<article class="post featured">
+								<header class="major">
+									<h2><a href="#">My Teaching Experience</a> </h2> 
+										 <h3>My Journey So Far</h3>
+									<p>I’ve successfully completed three teaching practicums—two in public schools and one in a Catholic school.<br />
+										Each placement has helped shape my understanding of how different learning environments operate and reaffirmed the importance of adaptability, relationship-building and reflective practice in the classroom. These experiences have also deepened my confidence in lesson planning, classroom management, and differentiation to meet a diverse range of student needs. <br />
+										I am <emphasise>currently</emphasise> majoring in Food Technology, an area I’m truly passionate about. I love learning and teaching about food, nutrition, and sustainability, and exploring how food connects to culture, health, and innovation.<br />
+										Some of my most recent work includes the development of a Raspberry and Beetroot Protein Bar - designed to support active lifestyles, and a gourmet sausage range that celebrates the unique flavours of native Indigenous ingredients, including game meats such as crocodile and kangaroo and native herbs such as lemon myrtle, pepperberry and bush tomato. Projects like these reflect my commitment to using food education as a tool to spark curiosity, respect for culture and critical and creative thinking in students.
+								</header>
+								<a href="#" class="image main"><img src="images/teaching-areas.png" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="docs/prac-overview.pdf" class="button large">See my Practicum Overview</a></li>
+								</ul>
+							</article>
+
+							<!-- Featured Post 3 (Overview of Journey) -->
+							<article class="post featured">
+								<header class="major">
+									<!-- My Professional Summary -->
+									<h2><a href="#">Professional Journey</a> </h2> 
+										<h3>From High School Student to High School Teacher</h3>
+								</header>
+									<h4>Professional Summary</h4>
+										<ul style="font-size: medium;">
+											<li>Pre-service teacher completing a Bachelor of Education, majoring in Food Technology</li>
+											<li>Completed three teaching placements: two at Albion Park High School (public) and one at St Joseph’s Catholic High School</li>
+											<li> Skilled in building positive relationships and fostering an inclusive classroom environment</li>
+											<li>Demonstrates strong classroom management and creative resource development skills</li>
+											<li>Passionate about promoting food, nutrition, and technology education through hands-on and theory-based learning</li>
+										</ul>
+
+									<!-- My Professional Journey -->
+									<h4>Professional Journey</h4>
+									<!-- This is a section with an ordered list that represents key milestones in my professional experience as a teacher-->
+									 <section>
+										 <ol>
+											<li>Graduated from Dapto High School in 2022</li>
+											<li>Began studying a Bachelor of Education (Secondary) / Bachelor of Arts (Design Innovation and Technologies) in 2023</li>
+											<li>Completed my first and second placement at Albion Park High School in 2024</li>
+											<li>Completed my third placement at St Joseph's Catholic High School in 2025</li>
+										</ol>
+									</section>
+								
+								<a href="#" class="image main"><img src="images/high-school-img.png" alt="Image of myself at my High School Graduation (Dapto High School, 2022) with the Principle, Andrew Fitzsimons and two other students."/></a>
+								<ul class="actions special">
+									<li><a href="https://dapto-h.schools.nsw.gov.au/" class="button large">Learn more about the school that inspired my journey</a></li>
+								</ul>
+							</article>
+
+						<!-- Footer -->
+							<footer>
+								<div class="pagination">
+									<!--<a href="#" class="previous">Prev</a>-->
+									<a href="http://127.0.0.1:5500/index.html" class="page active">1</a>
+									<a href="http://127.0.0.1:5500/teaching-practice.html" class="page">2</a>
+									<a href="http://127.0.0.1:5500/project-showcase.html" class="page">3</a>
+									<a href="http://127.0.0.1:5500/resources.html" class="page">5</a>
+									<a href="http://127.0.0.1:5500/resume.html" class="page">6</a>
+									<a href="http://127.0.0.1:5500/contact.html" class="page">7</a>
+									<a href="#" class="next">Next</a>
+								</div>
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+
+						<!-- This is the section for the Contact Form  -->
+<section class="contact">
+  <div class="inner">
+
+    <section class="split">
+
+      <!-- Left side of contact form -->
+      <section>
+        <h2>Get in touch</h2>
+        <form id="contact-form" action="https://formsubmit.co/23871082b040240f65ba7cc142b3abe8" method="post" autocomplete="on">
+        <!-- Form text input for Full Name -->
+          <div class="fields">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" placeholder="Zach Bryan" required minlength="6" autocomplete="name">
+            </div>
+        <!-- Form text input for Email address -->
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="name@example.com" required autocomplete="email">
+            </div>
+        <!-- Form text input for Message -->
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="How can I help?" required minlength="8"></textarea>
+            </div>
+          </div>
+        <!-- Honeypot anti-spam -->
+          <input type="text" name="honey" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;">
+        <!-- button tag used for input, in line with Semantic HTML-->
+          <ul class="actions">
+            <li><input type="submit" value="Send Message" class="button primary" /></li>
+          </ul>
+
+        </form>
+      </section>
+
+      <!-- Right side of contact form -->
+      <section>
+        <div class="alt">
+         
+      </section>
         </div>
-    </footer> 
-</body>
+   
+</section>
+
+
+                    <section>
+                        <div class="alt">
+                            <h3>Address</h3>
+                            <p>25A Barker Rd,<br>Strathfield, NSW 2135</p>
+                        </div>
+
+                        <div>
+                            <h3>Phone</h3>
+                            <p><a href="#">1300 275 228</a></p>
+                        </div>
+
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="#">Ruby.faughlin@gmail.com</a></p>
+                        </div>
+      
+						<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.facebook.com/ruby.faughlin/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/ruby.faughlin/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/RubyFaughlin/COMP208_AT3_Faughlin_Ruby" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Ruby Faughlin </li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
