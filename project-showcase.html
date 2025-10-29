@@ -47,40 +47,12 @@ License: Creative Commons Attribution 3.0 (https://html5up.net/license)
 							<article class="post featured">
 								<header class="major">
 
-									<!-- Dark/Light Mode Toggle Button -->
-    <ul class="actions special">
-      <li>
-        <button id="theme-toggle" class="button large">Switch to Dark Mode</button>
-      </li>
-    </ul>
+	<!-- Dark/Light Mode Toggle Button -->
+	 <button id="theme-toggle">Switch to Dark Mode</button>
 
   </header>
 </article>
-
-<!-- Dark/Light Mode code -->
-<script>
-  const btn = document.getElementById('theme-toggle');
-  const body = document.body;
-
-  btn.addEventListener('click', () => {
-    body.classList.toggle('dark-mode'); /* switch dark mode on/off */
-
-    const textElements = document.querySelectorAll(
-      '#main h1, #main h2, #main h3, #main h4, #main h5, #main h6, #main p, #main a, #main strong, #main .button.large, theme-toggle'
-    );
-
-    if (body.classList.contains('dark-mode')) {
-      btn.textContent = "Switch to Light Mode";
-      textElements.forEach(el => el.style.color = '#fff'); /* white text */
-	  
-    } else {
-      btn.textContent = "Switch to Dark Mode";
-      textElements.forEach(el => el.style.color = ''); /* reset to default (white mode) */
-	  
-    }
-  });
-</script>
-
+    
 <style>
   
   body.is-preload #main {			/* Light mode (default) */
@@ -108,12 +80,10 @@ button:hover, .button:hover, input[type=submit]:hover, input[type=reset]:hover, 
 }
 
 </style>
-
-									<span class="date">October 23, 2025</span>
 									<h2><a href="#">Completed University Projects</a> </h2> 
 										 <h3>The following are a collection of projects that I have developed throughout my major (Food Technology) and minor (Design in Timber) units.</h3>
 									
-                                         <h3>Definition</h3>
+                                         <h3>Overview</h3>
 									<dl>
 										<dt>Food Technology</dt>
 										<dd>
@@ -284,7 +254,7 @@ button:hover, .button:hover, input[type=submit]:hover, input[type=reset]:hover, 
 
 			</div>
 
-		<!-- Scripts -->
+				<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -292,6 +262,10 @@ button:hover, .button:hover, input[type=submit]:hover, input[type=reset]:hover, 
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/light-dark.js"></script>
+			<script src="assets/js/show.hide.js"></script>
+			<script src="assets/js/popup.js"></script>
+
 
 	</body>
 </html>

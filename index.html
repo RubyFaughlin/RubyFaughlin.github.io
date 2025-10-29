@@ -36,28 +36,7 @@ License: Creative Commons Attribution 3.0 (https://html5up.net/license)
 							<!-- Clear Button -->
 							<button id="clearGreetingBtn" type="button" style="padding: 0.5rem 2rem 3rem 2rem; margin-top: 0; margin-bottom: 20px;">Clear</button>
 
-
-						<script>
-							function setGreeting() {
-							const input = document.getElementById('usernameInput');
-							const greeting = document.getElementById('greeting');
-							const name = (input?.value || '').trim();
-							greeting.textContent = name ? `Welcome to my portfolio, ${name}! Here you can explore my journey at University, discover my professional experiences and explore the projects I have been working on that showcase my creativity and growth.
-							Feel free to reach out through the ‘Contact Me’ page — I’d love to hear from you.`
-
-														: 'Welcome to my portfolio!';
-							}
-							document.getElementById('setGreetingBtn').addEventListener('click',
-							setGreeting);
-
-							document.getElementById('clearGreetingBtn').addEventListener('click', () => {
-							document.getElementById('usernameInput').value = ''; /* This clears the input */
-    						document.getElementById('greeting').textContent = 'To find out more about this portfolio, please enter your name!'; // resets greeting
-    
-});
-
-							
-						</script>
+				
 					</section>
 
 						<ul class="actions">
@@ -96,7 +75,7 @@ License: Creative Commons Attribution 3.0 (https://html5up.net/license)
   <header class="major">
 
     <!-- Dark/Light Mode Toggle Button -->
-	 <button id="theme-toggle" class="button large">Switch to Dark Mode</button>
+	 <button id="theme-toggle">Switch to Dark Mode</button>
     
 <style>
   
@@ -127,7 +106,7 @@ button:hover, .button:hover, input[type=submit]:hover, input[type=reset]:hover, 
 </style>
 
 
-									<span class="date">October 23, 2025</span>
+									
 									<h2><a href="#">Who Am I?</a> </h2> 
 										 <h3>And Why Am I Becoming a Teacher?</h3>
 									<p>Hi, my name is <strong>Ruby Faughlin</strong><br />
@@ -142,23 +121,10 @@ button:hover, .button:hover, input[type=submit]:hover, input[type=reset]:hover, 
     		<section class="section">
 				<button onclick="toggle()">Hide/Show Image</button>
 
-		<!-- Resume image to show/hide -->
+		<!-- Image to show/hide -->
 		<div class="image main">
 			<img id="homeImage" src="images/background-photo.png" alt="This is a thumb nail of my home page.">
 		</div>
-
-
-				<script> 
-					function toggle () {
-					let para = document.getElementById("homeImage");
-					if (para.style.display === "none") {
-						para.style.display = "block";
-					} else {
-						para.style.display = "none";
-					}
-					console.log("Now display is:", para.style.display);
-					}
-        		</script>
     		</section>
 
 
@@ -324,7 +290,10 @@ button:hover, .button:hover, input[type=submit]:hover, input[type=reset]:hover, 
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="js/light-dark.js"></script>
+			<script src="assets/js/light-dark.js"></script>
+			<script src="assets/js/show.hide.js"></script>
+			<script src="assets/js/popup.js"></script>
+
 
 	</body>
 </html>

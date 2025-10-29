@@ -47,40 +47,12 @@ License: Creative Commons Attribution 3.0 (https://html5up.net/license)
 							<section class="post">
 								<header class="major">
 
-									<!-- Dark/Light Mode Toggle Button -->
-    <ul class="actions special">
-      <li>
-        <button id="theme-toggle" class="button large">Switch to Dark Mode</button>
-      </li>
-    </ul>
+									<article class="post featured">
+  <header class="major">
 
-  </header>
-</article>
-
-<!-- Dark/Light Mode code -->
-<script>
-  const btn = document.getElementById('theme-toggle');
-  const body = document.body;
-
-  btn.addEventListener('click', () => {
-    body.classList.toggle('dark-mode'); /* switch dark mode on/off */
-
-    const textElements = document.querySelectorAll(
-      '#main h1, #main h2, #main h3, #main h4, #main h5, #main h6, #main p, #main a, #main strong, #main .button.large, theme-toggle'
-    );
-
-    if (body.classList.contains('dark-mode')) {
-      btn.textContent = "Switch to Light Mode";
-      textElements.forEach(el => el.style.color = '#fff'); /* white text */
-	  
-    } else {
-      btn.textContent = "Switch to Dark Mode";
-      textElements.forEach(el => el.style.color = ''); /* reset to default (white mode) */
-	  
-    }
-  });
-</script>
-
+    <!-- Dark/Light Mode Toggle Button -->
+	 <button id="theme-toggle">Switch to Dark Mode</button>
+    
 <style>
   
   body.is-preload #main {			/* Light mode (default) */
@@ -109,7 +81,6 @@ button:hover, .button:hover, input[type=submit]:hover, input[type=reset]:hover, 
 
 </style>
 
-									<span class="date">October 23, 2025</span>
 									
                                     <h1>Resume</h1>
 									<p>This document outlines my professional/teaching experience to date:</p>
@@ -117,28 +88,12 @@ button:hover, .button:hover, input[type=submit]:hover, input[type=reset]:hover, 
 
 		 <!-- JavaScript to Show/Hide (Toggle) Image -->
     		<section class="section">
-				<button onclick="toggle()">Hide/Show Resume</button>
+				<button onclick="toggle()">Hide/Show Image</button>
 
-		<!-- Resume image to show/hide -->
+		<!-- Image to show/hide -->
 		<div class="image main">
-			<img id="myImage" src="images/resume-thumb.png" alt="This is a thumb nail of my resume.">
+			<img id="homeImage" src="images/background-photo.png" alt="This is a thumb nail of my home page.">
 		</div>
-
-		<ul class="actions special">
-            <li><a href="docs/resume.pdf" class="button icon solid fa-download">Download Resume</a></li>
-        </ul>
-
-				<script> 
-					function toggle () {
-					let para = document.getElementById("myImage");
-					if (para.style.display === "none") {
-						para.style.display = "block";
-					} else {
-						para.style.display = "none";
-					}
-					console.log("Now display is:", para.style.display);
-					}
-        		</script>
     		</section>
 								
              <!-- Section for short cover letter -->
@@ -232,7 +187,7 @@ button:hover, .button:hover, input[type=submit]:hover, input[type=reset]:hover, 
 
 			</div>
 
-		<!-- Scripts -->
+				<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -240,6 +195,10 @@ button:hover, .button:hover, input[type=submit]:hover, input[type=reset]:hover, 
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/light-dark.js"></script>
+			<script src="assets/js/show.hide.js"></script>
+			<script src="assets/js/popup.js"></script>
+		
 
 	</body>
 </html>
