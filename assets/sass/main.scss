@@ -1,0 +1,149 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/vendor';
+@import 'libs/breakpoints';
+@import 'libs/html-grid';
+@import 'libs/fixed-grid';
+@import 'fontawesome-all.min.css';
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900');
+
+/*
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+// Breakpoints.
+
+	@include breakpoints((
+		default:   (1681px,   null     ),
+		xlarge:    (1281px,   1680px   ),
+		large:     (981px,    1280px   ),
+		medium:    (737px,    980px    ),
+		small:     (481px,    736px    ),
+		xsmall:    (361px,    480px    ),
+		xxsmall:   (null,     360px    )
+	));
+
+// Mixins.
+
+	@mixin color($p) {
+		@include color-typography($p);
+		@include color-box($p);
+		@include color-button($p);
+		@include color-form($p);
+		@include color-list($p);
+		@include color-section($p);
+		@include color-table($p);
+		@include color-pagination($p);
+	}
+
+// Base.
+
+	@import 'base/reset';
+	@import 'base/page';
+	@import 'base/typography';
+
+// Component.
+
+	@import 'components/row';
+	@import 'components/box';
+	@import 'components/button';
+	@import 'components/form';
+	@import 'components/icon';
+	@import 'components/image';
+	@import 'components/actions';
+	@import 'components/icons';
+	@import 'components/list';
+	@import 'components/section';
+	@import 'components/table';
+	@import 'components/pagination';
+
+// Layout.
+
+	@import 'layout/wrapper';
+	@import 'layout/intro';
+	@import 'layout/header';
+	@import 'layout/nav';
+	@import 'layout/main';
+	@import 'layout/footer';
+	@import 'layout/navPanel';
+
+// Table. 
+	table {
+  width:100%;                                 /* Table spans full width */
+  border-collapse: collapse;                  /* Removes double borders */
+  margin-top: 10xp;                           /* Space above table */
+  font-family:Arial, Helvetica, sans-serif;   /* Table font */
+}
+th, td {
+  border: 1px solid #191919;                 /* Dark grey cell borders */
+  padding: 10px 12px;                          /* Space inside cells */
+  text-align: left;                            /* Aligns text to the left */
+}
+thead {
+  background-color: color #151515;      /* Light grey header background */
+}
+th {
+  color:#1B365C;                             /* Blue header text */
+  font-weight: bold;                           /* Bold font */
+}
+
+/* =========================================
+   DARK / LIGHT MODE FOR MASSIVELY TEMPLATE
+   ========================================= */
+
+
+body {											/* Transition of background */
+  transition: background 0.3s, color 0.3s;
+}
+
+body.light-mode {									/* Light Mode (regular) */
+  background-color: white !important;
+  color: #191919 !important;
+}
+
+body.dark-mode { 									/* Dark Mode */
+  background-color: #191919 !important;
+  color: white !important;
+}
+
+/* Posts container (#main) */
+body.dark-mode #main {
+  background-color: rgba(25, 25, 25, 0.95) !important;
+  color: white !important;
+}
+
+button#theme-toggle {						/* This is the toggle button light/dark mode */
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  z-index: 10;
+}
+
+#main,											/* Transition between light and dark mode */
+.inner {
+  transition: background 0.3s, color 0.3s;
+}
+
+.hidden {
+  display: none;
+}
+
+body.is-preload #main {				/* This is so the page begins with light mode */
+  background-color: _palette(bg); /* keeps the white content column */
+  color: _palette(text);          /* text colour */
+}
+
+body.dark-mode #main { 			/* Dark mode for content column */
+  background-color: #222; /* Dark backing for content column */
+  color: #fff;            /* Text color for readability */
+}
+
+
+#main h1, #main h2, #main h3, #main p {
+    border: none !important;
+}
