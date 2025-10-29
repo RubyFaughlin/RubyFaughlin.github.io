@@ -147,3 +147,28 @@ body.dark-mode #main { 			/* Dark mode for content column */
 #main h1, #main h2, #main h3, #main p {
     border: none !important;
 }
+
+
+  body.is-preload #main {			/* Light mode (default) */
+    background-color: white; /* or use _palette(bg) if using Sass variables */
+    color: black;            /* text colour for readability */
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  body.dark-mode #main {					  /* Dark mode (content column only) */
+    background-color: #222; /* dark content block */
+    color: #fff;            /* text colour */
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+button, .button, input[type=submit], input[type=reset], input[type=button] {		  /* Colour of ALL buttons */
+    background-color: #7D7D7D !important;			  /* Grey button colour */
+    color: #fff !important;							  /* Light blue border colour */
+    border: 1px solid #97DBFF !important;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover, .button:hover, input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover { /* Hover effect */
+    background-color: #7D7D7D !important;		/* Grey button colour */
+    color: #fff !important;			/* White text */
+}
