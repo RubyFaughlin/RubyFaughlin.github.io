@@ -107,6 +107,28 @@ License: Creative Commons Attribution 3.0 (https://html5up.net/license)
 
 <!-- Dark/Light Mode linked to JS -->
  <button id="theme-toggle">Switch to Dark Mode</button>
+<script>
+  const btn = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  btn.addEventListener('click', () => {
+    body.classList.toggle('dark-mode'); /* switch dark mode on/off */
+
+    const textElements = document.querySelectorAll(
+      '#main h1, #main h2, #main h3, #main h4, #main h5, #main h6, #main p, #main a, #main strong, #main .button.large, theme-toggle'
+    );
+
+    if (body.classList.contains('dark-mode')) {
+      btn.textContent = "Switch to Light Mode";
+      textElements.forEach(el => el.style.color = '#fff'); /* white text */
+	  
+    } else {
+      btn.textContent = "Switch to Dark Mode";
+      textElements.forEach(el => el.style.color = ''); /* reset to default (white mode) */
+	  
+    }
+  });
+</script>
 
 <style>
   
@@ -334,7 +356,6 @@ button:hover, .button:hover, input[type=submit]:hover, input[type=reset]:hover, 
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/light-dark.js"></script>
 
 	</body>
 </html>
